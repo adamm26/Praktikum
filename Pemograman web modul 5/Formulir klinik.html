@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Klinik Sehat</title>
+</head>
+<body>
+
+    <h2>Formulir Pendaftaran Klinik Sehat</h2>
+
+    <form action="" method="post">
+
+        <label>Nama Pasien:</label>
+        <input type="text" name="nama" required>
+        <br><br>
+
+        <label>Umur:</label>
+        <input type="number" name="umur" min="1" required>
+        <br><br>
+
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+        <input type="radio" name="jk" value="Perempuan"> Perempuan
+        <br><br>
+
+        <label>Keluhan:</label><br>
+        <textarea name="keluhan" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <label>Pilih Poli:</label>
+        <select name="poli">
+            <option value="Umum">Poli Umum</option>
+            <option value="Gigi">Poli Gigi</option>
+            <option value="Anak">Poli Anak</option>
+            <option value="THT">Poli THT</option>
+        </select>
+        <br><br>
+
+        <label>Riwayat Penyakit:</label><br>
+        <input type="checkbox" name="asma"> Asma <br>
+        <input type="checkbox" name="diabetes"> Diabetes <br>
+        <input type="checkbox" name="hipertensi"> Hipertensi <br>
+        <br>
+
+        <input type="submit" value="Daftar">
+    </form>
+
+</body>
+</html>
